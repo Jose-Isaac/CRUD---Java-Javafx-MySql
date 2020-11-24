@@ -1,0 +1,49 @@
+
+.dialog-pane{
+    -fx-font-family: "Segoe UI";
+    -fx-font-weight: bold;
+    -fx-max-width: 350px;
+    -fx-pref-height: 170px;
+}
+
+/**Costumization of The Bar where the buttons are located**/
+.dialog-pane > .button-bar > .container {
+    -fx-background-color: #1e90ff;
+}
+
+.dialog-pane > .content.label {
+    -fx-padding: 0.5em 0.5em 0.5em 0.5em;
+    -fx-background-color: #1e90ff;
+    -fx-text-fill:#fff;
+    -fx-font-size:15px;
+}
+
+/**Costumization of DialogPane Header**/
+.dialog-pane:header .header-panel {
+    -fx-background-color: #1e90ff;
+}
+
+.dialog-pane:header .header-panel .label{
+    -fx-background-color: #1e90ff;
+    -fx-background-radius:10px;
+    -fx-text-fill:black;
+    -fx-font-size:15.0px;
+    -fx-text-fill: #fff;
+    -fx-font-family: "Segoe UI Light";
+}
+
+
+/**Costumization of Buttons**/
+.dialog-pane .button{
+    -fx-background-color: #fff;
+    -fx-text-fill: #1e90ff;
+    -fx-wrap-text: true;
+    -fx-effect: dropshadow( three-pass-box, #18dcff, 10.0, 0.0, 0.0, 0.0);
+    -fx-cursor:hand;
+}
+
+.dialog-pane .button:hover{
+    -fx-background-color: #1e90ff;
+    -fx-text-fill: #fff;
+    -fx-font-weight:bold;
+}

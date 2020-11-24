@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="300.0" spacing="5.0" style="-fx-background-color: #70a1ff;" stylesheets="@../styles/home.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="btnHomeMenu" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleHome" prefHeight="56.0" prefWidth="334.0" styleClass="btn-menu" stylesheets="@../styles/home.css" text="Home" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/1xbaseline_home_white_48dp.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <VBox.margin>
+            <Insets left="30.0" right="20.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="btnHomeMenu1" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleHome" prefHeight="56.0" prefWidth="334.0" styleClass="btn-menu" stylesheets="@../styles/home.css" text="Cadastrar sócio" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/clipboard.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <VBox.margin>
+            <Insets left="30.0" right="20.0" />
+         </VBox.margin>
+         <padding>
+            <Insets left="14.0" />
+         </padding>
+      </Button>
+      <Button fx:id="btnExitMenu" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="56.0" prefWidth="334.0" styleClass="btn-menu" text="Sair">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/baseline_login_white_48dp.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

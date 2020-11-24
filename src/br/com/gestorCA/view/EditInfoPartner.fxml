@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="640.0" prefWidth="971.0" style="-fx-background-color: #40407a;" stylesheets="@../styles/infoPartner.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.gestorCA.view.EditInfoPartnerController">
+   <children>
+      <Label fx:id="idLabel" alignment="CENTER" layoutX="286.0" layoutY="14.0" prefHeight="46.0" prefWidth="971.0" styleClass="title" stylesheets="@../styles/infoPartner.css" text="FICHA INDIVIDUAL DE SÓCIO N°_" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <VBox fx:id="vboxMain" alignment="TOP_CENTER" prefHeight="590.0" prefWidth="971.0" style="-fx-background-color: #353535;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="49.60000000000002">
+         <children>
+            <ScrollPane fx:id="scroolPane" prefHeight="601.0" prefWidth="971.0" style="-fx-background-color: #000;" styleClass="scroolPane">
+              <content>
+                <AnchorPane fx:id="scroolAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="1756.0" prefWidth="935.0" style="-fx-background-color: #40407a;" styleClass="scroolAnchorPane">
+                     <children>
+                        <VBox alignment="TOP_CENTER" layoutX="8.0" layoutY="-2.0" prefHeight="1756.0" prefWidth="935.2" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="-8.0" AnchorPane.topAnchor="-2.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" maxWidth="650.0" prefHeight="1756.0" prefWidth="650.0">
+                                 <children>
+                                    <AnchorPane fx:id="scroolAnchorPane1" minHeight="0.0" minWidth="0.0" prefHeight="1756.0" prefWidth="650.0" style="-fx-background-color: #40407a;" styleClass="scroolAnchorPane">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="210.0" text="DADOS DA ASSOCIAÇÃO:" textFill="WHITE">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="associationNameLabel" layoutX="17.0" layoutY="64.0" prefHeight="40.0" prefWidth="623.0" styleClass="info-labels" text="Nome:" textFill="WHITE" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="associationFundationDateLabel" layoutX="325.0" layoutY="118.0" prefHeight="40.0" prefWidth="316.0" styleClass="info-labels" text="Data de Fundação:" textFill="WHITE" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="associationCnpjLabel" layoutX="19.0" layoutY="118.0" prefHeight="40.0" prefWidth="295.0" styleClass="info-labels" text="CNPJ:" textFill="WHITE" AnchorPane.leftAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="associationAddressLocalityLabel" layoutX="17.0" layoutY="173.0" prefHeight="40.0" prefWidth="295.0" styleClass="info-labels" text="Endereço:" textFill="WHITE" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="340.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="associationAddressNumberLabel" layoutX="321.0" layoutY="173.0" prefHeight="40.0" prefWidth="95.0" styleClass="info-labels" text="N°:" textFill="WHITE">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="associationAddressZoneLabel" layoutX="389.0" layoutY="173.0" prefHeight="40.0" prefWidth="212.0" styleClass="info-labels" text="Zona:" textFill="WHITE" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="associationAddressCityLabel" layoutX="324.0" layoutY="226.0" prefHeight="40.0" prefWidth="316.0" styleClass="info-labels" text="Município:" textFill="WHITE" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="associationAddressUfLabel" layoutX="205.0" layoutY="226.0" prefHeight="40.0" prefWidth="104.0" styleClass="info-labels" text="UF:" textFill="WHITE" AnchorPane.rightAnchor="341.4">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="associationAddressCepLabel" layoutX="23.0" layoutY="226.0" prefHeight="40.0" prefWidth="163.0" styleClass="info-labels" text="Cep:" textFill="WHITE" AnchorPane.leftAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="communitiesLabel" layoutX="15.0" layoutY="278.0" prefHeight="40.0" prefWidth="610.0" styleClass="info-labels" text="Comunidade(s):" textFill="WHITE" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="6.0" layoutY="63.0" orientation="VERTICAL" prefHeight="257.0" prefWidth="11.0" />
+                                          <Label layoutX="17.0" layoutY="337.0" prefHeight="27.0" prefWidth="210.0" text="DADOS DO SÓCIO:" textFill="WHITE">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerNameLabel" layoutX="15.0" layoutY="377.0" prefHeight="40.0" prefWidth="623.0" styleClass="info-labels" text="Nome:" textFill="WHITE" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cnpjLabel1" layoutX="15.0" layoutY="426.0" prefHeight="90.0" prefWidth="67.0" styleClass="info-labels" text="Filiação:" textFill="WHITE" AnchorPane.leftAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerMotherNameLabel" layoutX="89.0" layoutY="427.0" prefHeight="40.0" prefWidth="546.0" styleClass="info-labels" text="Mãe:" textFill="WHITE" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerFatherNameLabel" layoutX="89.0" layoutY="476.0" prefHeight="40.0" prefWidth="546.0" styleClass="info-labels" text="Pai:" textFill="WHITE">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerDateBirthLabel" layoutX="15.0" layoutY="524.0" prefHeight="40.0" prefWidth="302.0" styleClass="info-labels" text="Data de Nascimento: " textFill="WHITE" AnchorPane.leftAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerRegidtrationDateLabel" layoutX="329.0" layoutY="524.0" prefHeight="40.0" prefWidth="306.0" styleClass="info-labels" text="Data de Inscrição: " textFill="WHITE" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="6.0" layoutY="377.0" orientation="VERTICAL" prefHeight="579.0" prefWidth="11.0" />
+                                          <Label fx:id="partnerMaritalStatusLabel" layoutX="17.0" layoutY="572.0" prefHeight="40.0" prefWidth="233.0" styleClass="info-labels" text="Estado Civil:" textFill="WHITE" AnchorPane.leftAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerCpfLabel" layoutX="265.0" layoutY="572.0" prefHeight="40.0" prefWidth="249.0" styleClass="info-labels" text="CPF:" textFill="WHITE">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerSexLabel" layoutX="531.0" layoutY="572.0" prefHeight="40.0" prefWidth="104.0" styleClass="info-labels" text="Sexo:" textFill="WHITE" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="18.0" layoutY="951.0" prefHeight="9.0" prefWidth="614.0" />
+                                          <Label fx:id="partnerNaturalnessLabel" layoutX="19.0" layoutY="815.0" prefHeight="40.0" prefWidth="302.0" styleClass="info-labels" text="Naturalidade:" textFill="WHITE" AnchorPane.leftAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerNationalityLabel" layoutX="328.0" layoutY="815.0" prefHeight="40.0" prefWidth="302.0" styleClass="info-labels" text="Nacionalidade:" textFill="WHITE" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerSeriesLabel" layoutX="531.0" layoutY="620.0" prefHeight="40.0" prefWidth="104.0" styleClass="info-labels" text="Série:" textFill="WHITE" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerSchoolingLabel" layoutX="15.0" layoutY="669.0" prefHeight="40.0" prefWidth="302.0" styleClass="info-labels" text="Escolaridade:" textFill="WHITE" AnchorPane.leftAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerProfessionLabel" layoutX="322.0" layoutY="669.0" prefHeight="40.0" prefWidth="306.0" styleClass="info-labels" text="Profissão:" textFill="WHITE" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerRgLabel" layoutX="265.0" layoutY="622.0" prefHeight="40.0" prefWidth="250.0" styleClass="info-labels" text="RG:" textFill="WHITE" AnchorPane.leftAnchor="265.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerVoterRegistrationLabel" layoutX="203.0" layoutY="718.0" prefHeight="40.0" prefWidth="275.0" styleClass="info-labels" text="Título de Eleitor n°:" textFill="WHITE" AnchorPane.rightAnchor="172.2">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerCardWorkLabel" layoutX="16.0" layoutY="622.0" prefHeight="40.0" prefWidth="234.0" styleClass="info-labels" text="CTPS N°: " textFill="WHITE" AnchorPane.leftAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerLandTenureLabel" layoutX="17.0" layoutY="718.0" prefHeight="40.0" prefWidth="171.0" styleClass="info-labels" text="Posse da Terra:" textFill="WHITE" AnchorPane.leftAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="outherAssociationLabel" layoutX="15.0" layoutY="861.0" prefHeight="40.0" prefWidth="623.0" styleClass="info-labels" text="Outras Associações:" textFill="WHITE" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerSyndicateLabel" layoutX="15.0" layoutY="911.0" prefHeight="40.0" prefWidth="623.0" styleClass="info-labels" text="Sindicato:" textFill="WHITE" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="17.0" layoutY="984.0" prefHeight="27.0" prefWidth="210.0" text="ENDEREÇO RESIDENCIAL:" textFill="WHITE">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerLocalityLabel" layoutX="15.0" layoutY="1033.0" prefHeight="40.0" prefWidth="291.0" styleClass="info-labels" text="Localidade:" textFill="WHITE" AnchorPane.leftAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerCityLabel" layoutX="319.4" layoutY="1033.0" prefHeight="40.0" prefWidth="316.0" styleClass="info-labels" text="Município:" textFill="WHITE" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerUfLabel" layoutX="15.0" layoutY="1079.0" prefHeight="40.0" prefWidth="95.0" styleClass="info-labels" text="UF:" textFill="WHITE" AnchorPane.leftAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerCepLabel" layoutX="147.0" layoutY="1079.0" prefHeight="40.0" prefWidth="158.0" styleClass="info-labels" text="CEP:" textFill="WHITE">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="6.0" layoutY="1033.0" orientation="VERTICAL" prefHeight="88.0" prefWidth="11.0" />
+                                          <Label layoutX="20.0" layoutY="1150.0" prefHeight="27.0" prefWidth="295.0" text="ENDEREÇO DE ATIVIDADE / IMÓVEL:" textFill="WHITE">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerActivityAddressLocalityLabel" layoutX="15.0" layoutY="1207.0" prefHeight="40.0" prefWidth="291.0" styleClass="info-labels" text="Localidade:" textFill="WHITE" AnchorPane.leftAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerActivityAddressCityLabel" layoutX="319.4" layoutY="1207.0" prefHeight="40.0" prefWidth="316.0" styleClass="info-labels" text="Município:" textFill="WHITE" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerActivityAddressUfLabel" layoutX="15.0" layoutY="1253.0" prefHeight="40.0" prefWidth="95.0" styleClass="info-labels" text="UF:" textFill="WHITE" AnchorPane.leftAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerActivityAddressCepLabel" layoutX="150.0" layoutY="1253.0" prefHeight="40.0" prefWidth="154.0" styleClass="info-labels" text="CEP:" textFill="WHITE">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="6.0" layoutY="1206.0" orientation="VERTICAL" prefHeight="88.0" prefWidth="11.0" />
+                                          <Label fx:id="partnerLandAreaLabel" layoutX="322.0" layoutY="1253.0" prefHeight="40.0" prefWidth="196.0" styleClass="info-labels" text="Área -HA:" textFill="WHITE">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerSpouseNameLabel" layoutX="15.0" layoutY="1376.0" prefHeight="40.0" prefWidth="623.0" styleClass="info-labels" text="Nome do Cônjuge: " textFill="WHITE" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerSpouseCpfLabel" layoutX="15.0" layoutY="1426.0" prefHeight="40.0" prefWidth="291.0" styleClass="info-labels" text="CPF:" textFill="WHITE">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="associationNameField" editable="false" layoutX="68.0" layoutY="69.0" prefHeight="24.0" prefWidth="558.0" styleClass="text-field-no-editable" />
+                                          <TextField fx:id="associationCnpjFiled" editable="false" layoutX="64.0" layoutY="123.0" prefHeight="28.0" prefWidth="238.0" styleClass="text-field-no-editable" />
+                                          <DatePicker fx:id="associationFundationDatePicker" editable="false" layoutX="458.0" layoutY="123.0" prefHeight="28.0" prefWidth="171.0" />
+                                          <TextField fx:id="associationAddressLocalityField" editable="false" layoutX="92.0" layoutY="178.0" prefHeight="24.0" prefWidth="212.0" styleClass="text-field-no-editable" />
+                                          <TextField fx:id="associationAddressNumberField" editable="false" layoutX="352.0" layoutY="178.0" prefHeight="24.0" prefWidth="57.0" styleClass="text-field-no-editable" />
+                                          <TextField fx:id="associationAddressZoneField" editable="false" layoutX="470.0" layoutY="178.0" prefHeight="24.0" prefWidth="157.0" styleClass="text-field-no-editable" />
+                                          <TextField fx:id="associationAddressCepField" editable="false" layoutX="55.0" layoutY="231.0" prefHeight="24.0" prefWidth="115.0" styleClass="text-field-no-editable" />
+                                          <TextField fx:id="associationAddressCityField" editable="false" layoutX="401.0" layoutY="231.0" prefHeight="24.0" prefWidth="226.0" styleClass="text-field-no-editable" />
+                                          <TextField fx:id="associationAddressUfField" editable="false" layoutX="237.0" layoutY="231.0" prefHeight="24.0" prefWidth="65.0" styleClass="text-field-no-editable" />
+                                          <TextField fx:id="communitiesField" editable="false" layoutX="124.0" layoutY="283.0" prefHeight="24.0" prefWidth="502.0" styleClass="text-field-no-editable" />
+                                          <TextField fx:id="partnerNameField" layoutX="66.0" layoutY="382.0" prefHeight="24.0" prefWidth="561.0" />
+                                          <TextField fx:id="partnerMotherNameField" layoutX="132.0" layoutY="432.0" prefHeight="24.0" prefWidth="497.0" />
+                                          <TextField fx:id="partnerFatherNameField" layoutX="121.0" layoutY="481.0" prefHeight="24.0" prefWidth="507.0" />
+                                          <DatePicker fx:id="partnerDateBirthPicker" editable="false" layoutX="160.0" layoutY="529.0" prefHeight="28.0" prefWidth="150.0" />
+                                          <DatePicker fx:id="partnerRegidtrationDatePicker" editable="false" layoutX="454.0" layoutY="529.0" prefHeight="28.0" prefWidth="176.0" />
+                                          <TextField fx:id="partnerMaritalStatusField" layoutX="105.0" layoutY="577.0" prefHeight="24.0" prefWidth="139.0" />
+                                          <TextField fx:id="partnerCpfField" layoutX="305.0" layoutY="577.0" prefHeight="24.0" prefWidth="203.0" />
+                                          <TextField fx:id="partnerSexField" layoutX="577.0" layoutY="577.0" prefHeight="24.0" prefWidth="51.0" />
+                                          <TextField fx:id="partnerSeriesField" layoutX="577.0" layoutY="625.0" prefHeight="24.0" prefWidth="51.0" />
+                                          <TextField fx:id="partnerNationalityField" layoutX="441.0" layoutY="820.0" prefHeight="30.0" prefWidth="187.0" AnchorPane.rightAnchor="22.0" />
+                                          <TextField fx:id="partnerNaturalnessField" layoutX="113.0" layoutY="820.0" prefHeight="30.0" prefWidth="196.0" />
+                                          <TextField fx:id="partnerSchoolingField" layoutX="107.0" layoutY="674.0" prefHeight="24.0" prefWidth="203.0" />
+                                          <TextField fx:id="partnerProfessionField" layoutX="401.0" layoutY="674.0" prefHeight="24.0" prefWidth="226.0" />
+                                          <TextField fx:id="partnerRgField" layoutX="298.0" layoutY="627.0" prefHeight="30.0" prefWidth="210.0" />
+                                          <TextField fx:id="partnerVoterRegistrationField" layoutX="336.0" layoutY="723.0" prefHeight="30.0" prefWidth="134.0" />
+                                          <TextField fx:id="partnerCardWorkField" layoutX="84.0" layoutY="627.0" prefHeight="24.0" prefWidth="158.0" />
+                                          <TextField fx:id="partnerLandTenureField" layoutX="121.0" layoutY="723.0" prefHeight="30.0" prefWidth="58.0" />
+                                          <TextField fx:id="outherAssociationField" layoutX="150.0" layoutY="866.0" prefHeight="24.0" prefWidth="478.0" />
+                                          <TextField fx:id="partnerSyndicateField" layoutX="88.0" layoutY="916.0" prefHeight="24.0" prefWidth="540.0" />
+                                          <TextField fx:id="partnerLocalityField" layoutX="96.0" layoutY="1038.0" prefHeight="24.0" prefWidth="203.0" />
+                                          <TextField fx:id="partnerCityField" layoutX="396.0" layoutY="1038.0" prefHeight="24.0" prefWidth="232.0" />
+                                          <TextField fx:id="partnerActivityAddressLocalityField" layoutX="96.0" layoutY="1212.0" prefHeight="24.0" prefWidth="203.0" />
+                                          <TextField fx:id="partnerActivityAddressCityField" layoutX="396.0" layoutY="1212.0" prefHeight="24.0" prefWidth="232.0" />
+                                          <TextField fx:id="partnerUfField" layoutX="46.0" layoutY="1084.0" prefHeight="24.0" prefWidth="57.0" />
+                                          <TextField fx:id="partnerCepField" layoutX="189.0" layoutY="1084.0" prefHeight="24.0" prefWidth="109.0" />
+                                          <TextField fx:id="partnerActivityAddressUfField" layoutX="46.0" layoutY="1258.0" prefHeight="24.0" prefWidth="57.0" />
+                                          <TextField fx:id="partnerActivityAddressCepField" layoutX="188.0" layoutY="1258.0" prefHeight="24.0" prefWidth="109.0" />
+                                          <TextField fx:id="partnerLandAreaField" layoutX="396.0" layoutY="1258.0" prefHeight="24.0" prefWidth="115.0" />
+                                          <TextField fx:id="partnerSpouseNameField" layoutX="146.0" layoutY="1381.0" prefHeight="30.0" prefWidth="482.0" />
+                                          <TextField fx:id="partnerSpouseCpfField" layoutX="55.0" layoutY="1431.0" prefHeight="24.0" prefWidth="243.0" />
+                                          <Label layoutX="492.0" layoutY="718.0" prefHeight="40.0" prefWidth="139.0" styleClass="info-labels" text="N° Filhos:" textFill="WHITE" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="partnerChildrenNumberField" layoutX="569.0" layoutY="723.0" prefHeight="30.0" prefWidth="58.0" />
+                                          <Label fx:id="outherAssociationLabel1" layoutX="15.0" layoutY="767.0" prefHeight="40.0" prefWidth="614.0" styleClass="info-labels" text="Nome do(s) filho(s):" textFill="WHITE" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="partnerChildrenNameField" layoutX="146.0" layoutY="772.0" prefHeight="30.0" prefWidth="482.0" />
+                                          <Label layoutX="20.0" layoutY="1327.0" prefHeight="27.0" prefWidth="187.0" text="DADOS DO CÔNJUGE:" textFill="WHITE" AnchorPane.leftAnchor="20.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="6.0" layoutY="1377.0" orientation="VERTICAL" prefHeight="88.0" prefWidth="11.0" />
+                                          <Label layoutX="19.0" layoutY="1499.0" prefHeight="27.0" prefWidth="171.0" text="DADOS DE ACESSO:" textFill="WHITE" AnchorPane.leftAnchor="20.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerSpouseCpfLabel1" layoutX="15.0" layoutY="1558.0" prefHeight="40.0" prefWidth="356.0" styleClass="info-labels" text="Nome do Usuário:" textFill="WHITE" AnchorPane.leftAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="usernameField" layoutX="142.0" layoutY="1563.0" prefHeight="30.0" prefWidth="222.0" />
+                                          <Separator layoutX="6.0" layoutY="1559.0" orientation="VERTICAL" prefHeight="40.0" prefWidth="11.0" AnchorPane.leftAnchor="6.0" />
+                                          <Label fx:id="partnerSpouseCpfLabel11" layoutX="336.0" layoutY="1557.0" prefHeight="40.0" prefWidth="250.0" styleClass="info-labels" text="Senha:" textFill="WHITE" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="passwordField" layoutX="441.0" layoutY="1561.0" prefHeight="30.0" prefWidth="187.0" />
+                                          <Label layoutX="20.0" layoutY="1637.0" prefHeight="27.0" prefWidth="196.0" text="DADOS DE CONTATO:" textFill="WHITE" AnchorPane.leftAnchor="20.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="partnerSpouseCpfLabel12" layoutX="16.0" layoutY="1693.0" prefHeight="40.0" prefWidth="238.0" styleClass="info-labels" text="Celular:" textFill="WHITE" AnchorPane.leftAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="partnerPhoneField" layoutX="75.0" layoutY="1698.0" prefHeight="30.0" prefWidth="171.0" />
+                                          <Separator layoutX="7.0" layoutY="1694.0" orientation="VERTICAL" prefHeight="40.0" prefWidth="11.0" AnchorPane.leftAnchor="6.0" />
+                                          <Label fx:id="partnerSpouseCpfLabel111" layoutX="383.0" layoutY="1602.0" prefHeight="40.0" prefWidth="250.0" styleClass="info-labels" text="Nível de Acesso:" textFill="WHITE" AnchorPane.rightAnchor="15.0">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="accessLevel" editable="false" layoutX="506.0" layoutY="1607.0" prefHeight="30.0" prefWidth="122.0" styleClass="text-field-no-editable" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <Button layoutX="769.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleSave" styleClass="btn-bar" text="Salvar" AnchorPane.rightAnchor="122.0">
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/draft.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="848.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleCancel" styleClass="btn-bar" text="Cancelar" AnchorPane.rightAnchor="25.0">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/file.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

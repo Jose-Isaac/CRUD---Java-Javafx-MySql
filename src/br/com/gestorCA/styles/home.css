@@ -1,0 +1,46 @@
+.top-bar {
+    -fx-background-color: linear-gradient(to left bottom, #5352ed, #1e90ff);
+}
+
+.menu-bar {
+    -fx-background-color: #70a1ff;
+}
+
+.btn-edit {
+    -fx-background-color: #70a1ff;
+}
+
+.btn-edit:hover {
+    -fx-background-color: #5352ed;
+}
+
+.btn-menu {
+    -fx-background-color: #70a1ff;
+    -fx-text-fill: rgba(255, 255, 255, 0.8);
+    -fx-font-family: "Segoe UI";
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+    -fx-cursor: hand;
+}
+
+.btn-menu:hover {
+    -fx-font-weight: bold;
+    -fx-text-fill: rgba(255, 255, 255, 1);
+
+}
+
+.btn-menu-selected {
+    /*-fx-border-color: linear-gradient(to right top, #5352ed,#1e90ff);*/
+    -fx-border-color: #fff;
+    -fx-border-style: solid;
+    -fx-border-radius: 4px;
+    -fx-border-width: 3px;
+    -fx-font-size: 15px;
+    -fx-font-family: "Segoe UI";
+}
+
+.btn-search {
+    -fx-background-color: #5352ed;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14;
+}

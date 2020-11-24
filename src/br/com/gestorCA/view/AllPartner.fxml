@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="640.0" prefWidth="971.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.gestorCA.view.AllPartnerController">
+   <children>
+      <Label fx:id="idLabel" alignment="CENTER" layoutX="296.0" layoutY="24.0" prefHeight="46.0" prefWidth="971.0" styleClass="title" stylesheets="@../styles/infoPartner.css" text="SÓCIOS" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="partnerTableView" layoutX="152.0" layoutY="52.0" prefHeight="268.0" prefWidth="200.0" stylesheets="@../styles/table.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="54.0">
+        <columns>
+          <TableColumn fx:id="avatarColumn" prefWidth="150.0" text="Avatar" />
+          <TableColumn fx:id="nameColumn" prefWidth="300.0" text="Nome" />
+            <TableColumn fx:id="phoneColumn" prefWidth="200.0" text="Celular" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
